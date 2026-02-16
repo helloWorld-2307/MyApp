@@ -136,7 +136,7 @@ export default function AllAdmin() {
           </SearchIconWrapper>
 
           <StyledInputBase
-            placeholder="Search user with name"
+            placeholder="Search users by name"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
@@ -165,7 +165,7 @@ export default function AllAdmin() {
               handleCloseMenu();
             }}
           >
-            Sort A → Z
+            From A → Z
           </MenuItem>
 
           <MenuItem
@@ -174,7 +174,7 @@ export default function AllAdmin() {
               handleCloseMenu();
             }}
           >
-            Sort Z → A
+            From Z → A
           </MenuItem>
         </Menu>
       </Box>
