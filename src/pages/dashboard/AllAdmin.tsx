@@ -136,7 +136,7 @@ export default function AllAdmin() {
           </SearchIconWrapper>
 
           <StyledInputBase
-            placeholder="Search user"
+            placeholder="Search user with name"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
