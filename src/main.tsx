@@ -1,10 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+// import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import { store } from "./app/store";
 import App from "./App";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
+import { createRoot } from 'react-dom/client'
 
 const theme = createTheme({
   palette: {
@@ -14,7 +15,7 @@ const theme = createTheme({
   },
 });
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <Provider store={store}>
