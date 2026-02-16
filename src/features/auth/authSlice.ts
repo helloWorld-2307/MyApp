@@ -75,9 +75,9 @@ const authSlice = createSlice({
         showSuccess(`Welcome!! dear ${action.payload.name}`);
       })
 
-      .addCase(loginUser.rejected, (state, action) => {
+      .addCase(loginUser.rejected, (state) => {
         state.loading = null;
-        showError(action.payload || "Invalid credentials");
+        // showError(action.payload || "Invalid credentials");
       })
 
       //-----------get details
